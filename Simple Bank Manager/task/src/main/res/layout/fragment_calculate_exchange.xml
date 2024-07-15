@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
+
+
+    <TextView
+        android:id="@+id/calculateExchangeLabelFromTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="convert from" />
+
+    <Spinner
+        android:id="@+id/calculateExchangeFromSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/calculateExchangeLabelToTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="convert to" />
+
+    <Spinner
+        android:id="@+id/calculateExchangeToSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/calculateExchangeDisplayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/calculateExchangeAmountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateExchangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal"
+        android:text="calculate" />
+</LinearLayout>
